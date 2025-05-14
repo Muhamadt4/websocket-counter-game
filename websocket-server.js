@@ -2,6 +2,7 @@ import { WebSocketServer } from "ws";
 
 let globalCounter = 0;
 
+
 const wss = new WebSocketServer({ port: 3001 });
 
 wss.on("connection", function connecttion(ws) {

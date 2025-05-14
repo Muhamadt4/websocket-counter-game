@@ -8,7 +8,7 @@ export default function GameUi() {
 
   useEffect(() => {
     // ✅ Connect to correct WebSocket port
-    const ws = new WebSocket("ws://localhost:3001")
+    const ws = new WebSocket("wss://websocket-counter-game.onrender.com")
 
     ws.onopen = () => {
       console.log("✅ Connected to WebSocket server")
